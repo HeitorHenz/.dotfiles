@@ -5,10 +5,7 @@ args = []
 
 [shell]
 program = "/bin/fish"
-args = []
-
-[platform]
-linux.shell.program = "fish"
+args = ["--login"]
 
 [fonts]
 size = 18
