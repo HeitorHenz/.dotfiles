@@ -1,10 +1,9 @@
 
+confirm-before-quit = false
+
 [editor]
 program = "hx"
 args = []
-
-[platform]
-linux.shell = { program = "/bin/fish", args = [] }
 
 [fonts]
 size = 18
