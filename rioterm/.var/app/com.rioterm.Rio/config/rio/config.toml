@@ -3,7 +3,9 @@
 program = "hx"
 args = []
 
-
+[shell]
+program = "/bin/fish"
+args = []
 
 [fonts]
 size = 18
@@ -61,11 +63,12 @@ light_magenta = '#d3869b'
 light_cyan = '#8ec07c'
 light_white = '#ebdbb2'
 
-
 [window]
 opacity = 0.9
 decorations = "disabled"
 blur = true
+
+
 
 # Hide the cursor while typing
 #
