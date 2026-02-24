@@ -7,6 +7,9 @@ args = []
 program = "/bin/fish"
 args = []
 
+[platform]
+linux.shell.program = "fish"
+
 [fonts]
 size = 18
 features = []
