@@ -16,14 +16,7 @@
     "right_padding": 0.05,
     "left_padding": 0.05,
   },
-  "agent": {
-    "default_model": {
-      "provider": "deepseek",
-      "model": "deepseek-chat",
-    },
-    "default_profile": "ask",
-    "model_parameters": [],
-  },
+  "disable_ai": true,
   "icon_theme": "Colored Zed Icons Theme Dark",
   "buffer_font_family": "Fira Code",
   "ui_font_size": 18,
