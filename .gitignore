@@ -1,0 +1,24 @@
+
+# Ignore Flatpak data and runtime caches (Rio & Zed)
+**/.var/app/*/cache/
+**/.var/app/*/.ld.so/
+**/.var/app/*/config/flatpak-*
+
+# Ignore machine-specific Fish variables (Universal variables)
+**/fish_variables
+
+# Ignore general temp files
+*.tmp
+*.log
+
+
+# Ignore Zed
+
+**/.var/app/dev.zed.Zed/data/
+**/.var/app/dev.zed.Zed/config/user-dirs.dirs
+**/.var/app/dev.zed.Zed/config/npmrc
+
+# Keep Zed
+ 
+!**/.var/app/dev.zed.Zed/config/zed/settings.json
+!**/.var/app/dev.zed.Zed/config/zed/keymap.json
