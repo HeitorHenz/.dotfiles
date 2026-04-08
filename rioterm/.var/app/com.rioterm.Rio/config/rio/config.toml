@@ -62,7 +62,7 @@ light_cyan = '#8ec07c'
 light_white = '#ebdbb2'
 
 [window]
-opacity = 0.9
+opacity = 0.75
 decorations = "disabled"
 blur = true
 

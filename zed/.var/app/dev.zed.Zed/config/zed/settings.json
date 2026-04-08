@@ -9,9 +9,10 @@
 {
   "agent": {
     "default_model": {
-      "provider": "deepseek",
-      "model": "deepseek-chat",
-      "enable_thinking": false
+      "effort": "high",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6-latest",
+      "enable_thinking": true
     },
     "favorite_models": [],
     "model_parameters": []
