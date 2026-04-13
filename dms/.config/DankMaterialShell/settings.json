@@ -222,7 +222,7 @@
   "launcherLogoSizeOffset": 0,
   "fontFamily": "Inter Variable",
   "monoFontFamily": "Fira Code",
-  "fontWeight": 400,
+  "fontWeight": 700,
   "fontScale": 1,
   "notepadUseMonospace": true,
   "notepadFontFamily": "",
@@ -415,12 +415,8 @@
       ],
       "rightWidgets": [
         {
-          "id": "cpuUsage",
-          "enabled": false
-        },
-        {
-          "id": "memUsage",
-          "enabled": false
+          "id": "privacyIndicator",
+          "enabled": true
         },
         {
           "id": "systemTray",

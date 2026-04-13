@@ -1,7 +1,7 @@
 
 {
   "agent": {
-    "default_profile": "ask",
+    "default_profile": "write",
     "default_model": {
       "effort": "high",
       "provider": "anthropic",
