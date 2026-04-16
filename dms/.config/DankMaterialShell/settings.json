@@ -435,7 +435,7 @@
       "innerPadding": 4,
       "bottomGap": 0,
       "transparency": 0,
-      "widgetTransparency": 0.9,
+      "widgetTransparency": 0.75,
       "squareCorners": false,
       "noBackground": false,
       "maximizeWidgetIcons": false,
