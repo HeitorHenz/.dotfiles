@@ -385,7 +385,11 @@
   "updaterCustomCommand": "",
   "updaterTerminalAdditionalParams": "",
   "displayNameMode": "system",
-  "screenPreferences": {},
+  "screenPreferences": {
+    "wallpaper": [
+      "all"
+    ]
+  },
   "showOnLastDisplay": {},
   "niriOutputSettings": {},
   "hyprlandOutputSettings": {},
@@ -446,7 +450,7 @@
       "borderOpacity": 1,
       "borderThickness": 1,
       "widgetOutlineEnabled": true,
-      "widgetOutlineColor": "primary",
+      "widgetOutlineColor": "secondary",
       "widgetOutlineOpacity": 1,
       "widgetOutlineThickness": 2,
       "fontScale": 1,
