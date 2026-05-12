@@ -1,20 +1,29 @@
-
 {
-  "agent_servers": {
-    "kimi": {
-      "type": "registry"
+  "ssh_connections": [
+    {
+      "host": "172.233.20.66",
+      "username": "root",
+      "args": [],
+      "projects": []
     }
+  ],
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry"
+    },
+    "kimi": {
+      "type": "registry",
+    },
   },
   "agent": {
-    "default_profile": "write",
+    "default_profile": "ask",
     "default_model": {
-      "effort": "high",
-      "provider": "anthropic",
-      "model": "claude-sonnet-4-6-latest",
-      "enable_thinking": true
+      "provider": "deepseek",
+      "model": "deepseek-chat",
+      "enable_thinking": false,
     },
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "helix_mode": false,
   "vim_mode": false,
