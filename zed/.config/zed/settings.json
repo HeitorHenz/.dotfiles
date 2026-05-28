@@ -1,28 +1,76 @@
 {
+  "autosave": "on_focus_change",
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
   "ssh_connections": [
     {
       "host": "172.233.20.66",
       "username": "root",
       "args": [],
-      "projects": []
-    }
+      "projects": [
+        {
+          "paths": ["/root"],
+        },
+        {
+          "paths": ["/root/dev"],
+        },
+      ],
+    },
+    {
+      "host": "172.233.20.66",
+      "username": "root",
+      "args": [],
+      "projects": [],
+    },
+    {
+      "host": "172.233.20.66",
+      "username": "root",
+      "args": [],
+      "projects": [],
+    },
   ],
   "agent_servers": {
     "claude-acp": {
-      "type": "registry"
+      "type": "registry",
     },
     "kimi": {
       "type": "registry",
     },
   },
   "agent": {
+    "dock": "right",
+    "tool_permissions": {
+      "tools": {
+        "terminal": {
+          "default": "allow",
+        },
+      },
+    },
     "default_profile": "ask",
     "default_model": {
-      "provider": "deepseek",
-      "model": "deepseek-chat",
-      "enable_thinking": false,
+      "effort": "xhigh",
+      "provider": "zed.dev",
+      "model": "gpt-5.5",
+      "enable_thinking": true,
     },
-    "favorite_models": [],
+    "favorite_models": [
+      {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "enable_thinking": true,
+        "effort": "max",
+      },
+    ],
     "model_parameters": [],
   },
   "helix_mode": false,
@@ -54,6 +102,13 @@
   "languages": {
     "Python": {
       "language_servers": ["ty", "ruff", "!basedpyright"],
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "ruff",
+          "arguments": ["format", "-"],
+        },
+      },
     },
   },
 }

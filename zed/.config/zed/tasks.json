@@ -1,0 +1,17 @@
+[
+  {
+    "label": "pytest",
+    "command": "uv run pytest",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+  },
+  {
+    "label": "bandit",
+    "command": "uv run bandit -r app",
+    "cwd": "/home/h/dev/JA-Backend",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+  },
+]

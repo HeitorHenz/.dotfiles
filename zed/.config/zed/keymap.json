@@ -1,0 +1,16 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-alt-g": ["task::Spawn", { "task_name": "pytest" }],
+      "ctrl-alt-b": ["task::Spawn", { "task_name": "bandit" }],
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "ctrl-alt-g": ["task::Spawn", { "task_name": "pytest" }],
+      "ctrl-alt-b": ["task::Spawn", { "task_name": "bandit" }],
+    },
+  },
+]
