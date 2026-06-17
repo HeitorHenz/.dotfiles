@@ -1,6 +1,31 @@
 # Ghostty config file (~/.config/ghostty/config)
 
-# Primary colors
+# Window settings
+background-opacity = 0.75
+window-decoration = false
+window-padding-x = 2
+window-padding-y = 2
+window-inherit-font-size = false
+
+# Font settings
+font-size = 14
+font-family = "Fira Code"
+font-style = "Bold"
+
+font-family-bold = "Fira Code"
+font-style-bold = "Bold"
+
+font-family-italic = "Fira Code"
+font-style-italic = "Italic"
+
+font-family-bold-italic = "Fira Code"
+font-style-bold-italic = "Bold Italic"
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+
+# Colors - Primary
 background = "#1b1b1b"
 foreground = "#ebdbb2"
 
@@ -8,11 +33,11 @@ foreground = "#ebdbb2"
 cursor-text = "#1b1b1b"
 cursor-color = "#ebdbb2"
 
-# Selection colors (corrected field name)
+# Selection colors
 selection-foreground = "#ebdbb2"
 selection-background = "#665c54"
 
-# Palette - NO comments allowed!
+# Palette (ANSI colors)
 palette = 0=#1b1b1b
 palette = 1=#cc241d
 palette = 2=#98971a
@@ -21,6 +46,8 @@ palette = 4=#458588
 palette = 5=#b16286
 palette = 6=#689d6a
 palette = 7=#a89984
+
+# Bright colors
 palette = 8=#928374
 palette = 9=#fb4934
 palette = 10=#b8bb26
