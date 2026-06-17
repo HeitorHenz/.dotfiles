@@ -7,6 +7,7 @@
     "dock": "left",
   },
   "collaboration_panel": {
+    "button": false,
     "dock": "left",
   },
   "git_panel": {
@@ -51,16 +52,19 @@
     "dock": "right",
     "tool_permissions": {
       "tools": {
+        "fetch": {
+          "default": "allow"
+        },
         "terminal": {
           "default": "allow",
         },
       },
     },
-    "default_profile": "ask",
+    "default_profile": "write",
     "default_model": {
-      "effort": "xhigh",
-      "provider": "zed.dev",
-      "model": "gpt-5.5",
+      "effort": "max",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
       "enable_thinking": true,
     },
     "favorite_models": [
