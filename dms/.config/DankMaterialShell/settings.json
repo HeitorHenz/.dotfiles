@@ -8,7 +8,7 @@
   "matugenScheme": "scheme-tonal-spot",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
-  "popupTransparency": 1,
+  "popupTransparency": 0.8,
   "dockTransparency": 1,
   "widgetBackgroundColor": "sch",
   "widgetColorMode": "default",
@@ -168,10 +168,36 @@
   "runningAppsCurrentWorkspace": true,
   "runningAppsGroupByApp": false,
   "runningAppsCurrentMonitor": false,
-  "appIdSubstitutions": [],
-  "centeringMode": "index",
-  "clockDateFormat": "",
-  "lockDateFormat": "",
+  "appIdSubstitutions": [
+    {
+      "pattern": "Spotify",
+      "replacement": "spotify",
+      "type": "exact"
+    },
+    {
+      "pattern": "beepertexts",
+      "replacement": "beeper",
+      "type": "exact"
+    },
+    {
+      "pattern": "home assistant desktop",
+      "replacement": "homeassistant-desktop",
+      "type": "exact"
+    },
+    {
+      "pattern": "com.transmissionbt.transmission",
+      "replacement": "transmission-gtk",
+      "type": "contains"
+    },
+    {
+      "pattern": "^steam_app_(\\d+)$",
+      "replacement": "steam_icon_$1",
+      "type": "regex"
+    }
+  ],
+  "centeringMode": "geometric",
+  "clockDateFormat": "dddd, MMMM d",
+  "lockDateFormat": "dddd, MMMM d",
   "greeterRememberLastSession": true,
   "greeterRememberLastUser": true,
   "greeterEnableFprint": false,
@@ -199,9 +225,9 @@
   "useAutoLocation": false,
   "weatherEnabled": true,
   "networkPreference": "ethernet",
-  "iconTheme": "System Default",
+  "iconTheme": "Papirus",
   "cursorSettings": {
-    "theme": "Adwaita",
+    "theme": "System Default",
     "size": 24,
     "niri": {
       "hideWhenTyping": false,
@@ -216,14 +242,14 @@
       "cursorHideTimeout": 0
     }
   },
-  "launcherLogoMode": "compositor",
+  "launcherLogoMode": "os",
   "launcherLogoCustomPath": "",
   "launcherLogoColorOverride": "",
   "launcherLogoColorInvertOnMode": false,
   "launcherLogoBrightness": 0.5,
   "launcherLogoContrast": 1,
   "launcherLogoSizeOffset": 0,
-  "fontFamily": "Inter Variable",
+  "fontFamily": "FiraCode Nerd Font",
   "monoFontFamily": "Fira Code",
   "fontWeight": 700,
   "fontScale": 1,
@@ -238,9 +264,9 @@
   "soundNewNotification": true,
   "soundVolumeChanged": true,
   "soundPluggedIn": true,
-  "acMonitorTimeout": 0,
-  "acLockTimeout": 0,
-  "acSuspendTimeout": 0,
+  "acMonitorTimeout": 900,
+  "acLockTimeout": 300,
+  "acSuspendTimeout": 1800,
   "acSuspendBehavior": 0,
   "acProfileName": "",
   "batteryMonitorTimeout": 0,
@@ -270,7 +296,7 @@
   "qtThemingEnabled": false,
   "syncModeWithPortal": true,
   "terminalsAlwaysDark": false,
-  "muxType": "tmux",
+  "muxType": "zellij",
   "muxUseCustomCommand": false,
   "muxCustomCommand": "",
   "muxSessionFilter": "",
@@ -358,11 +384,11 @@
   "notificationHistorySaveNormal": true,
   "notificationHistorySaveCritical": true,
   "notificationRules": [],
-  "osdAlwaysShowValue": false,
+  "osdAlwaysShowValue": true,
   "osdPosition": 5,
   "osdVolumeEnabled": true,
   "osdMediaVolumeEnabled": true,
-  "osdMediaPlaybackEnabled": false,
+  "osdMediaPlaybackEnabled": true,
   "osdBrightnessEnabled": true,
   "osdIdleInhibitorEnabled": true,
   "osdMicMuteEnabled": true,
@@ -380,7 +406,7 @@
     "restart"
   ],
   "powerMenuDefaultAction": "logout",
-  "powerMenuGridLayout": false,
+  "powerMenuGridLayout": true,
   "customPowerActionLock": "",
   "customPowerActionLogout": "",
   "customPowerActionSuspend": "",
@@ -416,11 +442,20 @@
       ],
       "showOnLastDisplay": true,
       "leftWidgets": [
-        "workspaceSwitcher",
-        "focusedWindow"
+        {
+          "id": "focusedWindow",
+          "enabled": true
+        },
+        {
+          "id": "music",
+          "enabled": true
+        },
+        {
+          "id": "clipboard",
+          "enabled": true
+        }
       ],
       "centerWidgets": [
-        "music",
         "clock",
         "weather"
       ],
@@ -435,6 +470,20 @@
         },
         {
           "id": "controlCenterButton",
+          "enabled": true,
+          "showNetworkIcon": false,
+          "showBluetoothIcon": false,
+          "showAudioIcon": false,
+          "showAudioPercent": false,
+          "showVpnIcon": false,
+          "showBrightnessIcon": false,
+          "showBrightnessPercent": false,
+          "showMicPercent": false,
+          "showBatteryIcon": false,
+          "showScreenSharingIcon": false
+        },
+        {
+          "id": "powerMenuButton",
           "enabled": true
         }
       ],
@@ -551,34 +600,47 @@
   "desktopWidgetGridSettings": {},
   "desktopWidgetInstances": [
     {
-      "id": "dw_1776363700835_4k412phdw",
-      "widgetType": "desktopClock",
-      "name": "Desktop Clock",
+      "id": "dw_1782324277734_r9uenp3em",
+      "widgetType": "systemMonitor",
+      "name": "System Monitor",
       "enabled": false,
       "config": {
-        "style": "analog",
+        "showHeader": true,
         "transparency": 0.8,
         "colorMode": "primary",
         "customColor": "#ffffff",
-        "showDate": true,
-        "showAnalogNumbers": false,
-        "showAnalogSeconds": true,
+        "showCpu": true,
+        "showCpuGraph": true,
+        "showCpuTemp": true,
+        "showGpuTemp": false,
+        "gpuPciId": "",
+        "showMemory": true,
+        "showMemoryGraph": true,
+        "showNetwork": true,
+        "showNetworkGraph": true,
+        "showDisk": true,
+        "showTopProcesses": false,
+        "topProcessCount": 3,
+        "topProcessSortBy": "cpu",
+        "layoutMode": "auto",
+        "graphInterval": 60,
         "displayPreferences": [
           "all"
-        ]
+        ],
+        "showOnOverlay": false
       },
       "positions": {
         "eDP-1": {
-          "width": 200,
-          "height": 200,
-          "x": 540,
-          "y": 300
+          "width": 320,
+          "height": 480,
+          "x": 480,
+          "y": 160
         },
         "HDMI-A-1": {
-          "width": 200,
-          "height": 200,
-          "x": 860,
-          "y": 440
+          "width": 320,
+          "height": 480,
+          "x": 800,
+          "y": 300
         }
       }
     }
