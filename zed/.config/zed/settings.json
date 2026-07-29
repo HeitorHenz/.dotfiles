@@ -1,4 +1,6 @@
 {
+  "diff_view_style": "split",
+  "cli_default_open_behavior": "existing_window",
   "autosave": "on_focus_change",
   "project_panel": {
     "dock": "left",
@@ -41,17 +43,30 @@
     },
   ],
   "agent_servers": {
-    "claude-acp": {
-      "type": "registry",
-    },
     "kimi": {
+      "default_mode": "default",
       "type": "registry",
     },
   },
   "agent": {
+    "sandbox_permissions": {
+      "network_hosts": [
+        "normas.leg.br",
+        "www.lexml.gov.br",
+        "www.camara.leg.br",
+        "pesquisa.in.gov.br"
+      ]
+    },
     "dock": "right",
     "tool_permissions": {
       "tools": {
+        "create_directory": {
+          "always_allow": [
+            {
+              "pattern": "^/home/h/dev/JA-LandingPage/src/routes/assinar/\\[plano\\]/"
+            }
+          ]
+        },
         "fetch": {
           "default": "allow"
         },
@@ -101,7 +116,7 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Gruvbox Dark Hard",
+    "dark": "Gruvblur - blurred",
   },
   "languages": {
     "Python": {
