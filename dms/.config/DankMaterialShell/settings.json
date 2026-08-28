@@ -384,7 +384,7 @@
   "acSuspendTimeout": 1800,
   "acSuspendBehavior": 0,
   "acProfileName": "",
-  "acPostLockMonitorTimeout": 0,
+  "acPostLockMonitorTimeout": 900,
   "batteryMonitorTimeout": 0,
   "batteryLockTimeout": 0,
   "batterySuspendTimeout": 0,
@@ -408,16 +408,6 @@
   "fadeToDpmsEnabled": true,
   "fadeToDpmsGracePeriod": 5,
   "launchPrefix": "",
-  "brightnessDevicePins": {},
-  "wifiNetworkPins": {},
-  "bluetoothDevicePins": {
-    "preferredDevice": [
-      "F4:9D:8A:8A:F8:F6",
-      "78:99:87:ED:28:EE"
-    ]
-  },
-  "audioInputDevicePins": {},
-  "audioOutputDevicePins": {},
   "gtkThemingEnabled": false,
   "qtThemingEnabled": false,
   "syncModeWithPortal": true,
@@ -847,5 +837,5 @@
   "barInsetPaddingShared": -1,
   "barInsetPaddingSyncAll": false,
   "frameBarInsetPadding": 3,
-  "configVersion": 12
+  "configVersion": 13
 }
