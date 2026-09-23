@@ -45,7 +45,7 @@ gtk-titlebar = false
 shell-integration = detect
 shell-integration-features = cursor,sudo,title,no-cursor
 keybind = shift+enter=text:\n
-
+keybind = ctrl+enter=unbind
 # Rando stuff
 gtk-single-instance = true
 
