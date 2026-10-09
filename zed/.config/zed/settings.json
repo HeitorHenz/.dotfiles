@@ -28,25 +28,10 @@
       "args": [],
       "projects": [
         {
-          "paths": ["/root"],
-        },
-        {
           "paths": ["/root/dev"],
         },
       ],
-    },
-    {
-      "host": "172.233.20.66",
-      "username": "root",
-      "args": [],
-      "projects": [],
-    },
-    {
-      "host": "172.233.20.66",
-      "username": "root",
-      "args": [],
-      "projects": [],
-    },
+    }
   ],
   "agent_servers": {
     "kimi": {
@@ -55,35 +40,10 @@
     },
   },
   "agent": {
-    "sandbox_permissions": {
-      "network_hosts": [
-        "normas.leg.br",
-        "www.lexml.gov.br",
-        "www.camara.leg.br",
-        "pesquisa.in.gov.br"
-      ]
-    },
     "dock": "right",
-    "tool_permissions": {
-      "tools": {
-        "create_directory": {
-          "always_allow": [
-            {
-              "pattern": "^/home/h/dev/JA-LandingPage/src/routes/assinar/\\[plano\\]/"
-            }
-          ]
-        },
-        "fetch": {
-          "default": "allow"
-        },
-        "terminal": {
-          "default": "allow",
-        },
-      },
-    },
-    "default_profile": "write",
+    "default_profile": "ask",
     "default_model": {
-      "effort": "high",
+      "effort": "max",
       "provider": "deepseek",
       "model": "deepseek-flash",
       "enable_thinking": true,
@@ -105,7 +65,7 @@
         "provider": "deepseek",
         "model": "deepseek-flash",
         "enable_thinking": true,
-        "effort": "high"
+        "effort": "max"
       }
     ],
     "model_parameters": [],
@@ -138,7 +98,7 @@
   },
   "languages": {
     "Python": {
-      "language_servers": ["ty", "ruff", "!basedpyright"],
+      "language_servers": ["ty", "ruff", "basedpyright"],
       "format_on_save": "on",
       "formatter": {
         "external": {
