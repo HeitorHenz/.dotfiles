@@ -143,7 +143,51 @@
       "shadowCustomColor": "#000000",
       "clickThrough": false,
       "followInterfaceStyle": false,
-      "widgetFollowInterfaceStyle": false
+      "widgetFollowInterfaceStyle": false,
+      "island": false,
+      "dot": false,
+      "islandHomeLayout": [
+        {
+          "id": "workspaces",
+          "enabled": true
+        },
+        {
+          "id": "media",
+          "enabled": true
+        },
+        {
+          "id": "clock",
+          "enabled": true
+        },
+        {
+          "id": "weather",
+          "enabled": true
+        },
+        {
+          "id": "status",
+          "enabled": false
+        },
+        {
+          "id": "volume",
+          "enabled": false
+        },
+        {
+          "id": "brightness",
+          "enabled": false
+        },
+        {
+          "id": "notifications",
+          "enabled": true
+        },
+        {
+          "id": "privacy",
+          "enabled": true
+        },
+        {
+          "id": "tray",
+          "enabled": false
+        }
+      ]
     }
   ],
   "desktopWidgetInstances": [
@@ -197,7 +241,7 @@
   "frameRounding": 18,
   "frameBarInsetPadding": 3,
   "configVersion": 42,
-  "radiusStrength": 38,
+  "radiusStrength": 16,
   "dockConfigs": [
     {
       "id": "dock",
@@ -217,7 +261,7 @@
       "margin": 0,
       "bottomGap": 0,
       "transparency": 1,
-      "followInterfaceStyle": false,
+      "followInterfaceStyle": true,
       "autoHide": false,
       "smartAutoHide": false,
       "useOverlayLayer": false,
@@ -379,5 +423,10 @@
   "blurBorderEnabled": true,
   "blurEnabled": true,
   "blurBorderSeeded": true,
-  "blurStrength": 40
+  "blurStrength": 40,
+  "floatingWindowTitleBars": false,
+  "focusRingWidth": 1.5,
+  "floatingWindowSyncGlobal": true,
+  "connectedFrameBarStyleBackups": {},
+  "frameEnabled": false
 }

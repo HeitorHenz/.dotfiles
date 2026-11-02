@@ -8,7 +8,7 @@ hl.config({
 		resize_on_border = false,
 	},
 	decoration = {
-		rounding = 12,
+		rounding = 5,
 		blur = {
 			size = 7,
 			passes = 2,
@@ -18,5 +18,10 @@ hl.config({
 
 hl.layer_rule({
 	match = { namespace = "^dms:bar$" },
+	xray = true,
+})
+
+hl.layer_rule({
+	match = { namespace = "^dms:dankisland$" },
 	xray = true,
 })
