@@ -8,7 +8,7 @@ if status is-interactive
 end
 
 # uv
-fish_add_path "/var/home/h/.local/bin"
+fish_add_path "$HOME/.local/bin"
 
 # pnpm
 set -gx PNPM_HOME "/home/h/.local/share/pnpm"

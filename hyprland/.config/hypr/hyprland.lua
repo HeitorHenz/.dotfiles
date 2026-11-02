@@ -33,7 +33,7 @@ hl.config({
 		shadow = {
 			enabled = true,
 			range = 30,
-			render_power = 5,
+			render_power = 4,
 			offset = "0 5",
 			color = "rgba(00000070)",
 		},
@@ -91,6 +91,7 @@ require("dms.colors")
 require("dms.outputs")
 require("dms.layout")
 require("dms.cursor")
+require("dms.input")
 require("dms.binds")
 require("dms.binds-user")
 require("dms.windowrules")

@@ -34,10 +34,15 @@
     }
   ],
   "agent_servers": {
-    "kimi": {
-      "default_mode": "default",
-      "type": "registry",
-    },
+    "Kimi Code CLI": {
+      "default_config_options": {
+        "mode": "default"
+      },
+      "type": "custom",
+      "command": "kimi",
+      "args": ["acp"],
+      "env": {}
+    }
   },
   "agent": {
     "dock": "right",
