@@ -79,11 +79,6 @@ hl.window_rule({
 })
 hl.window_rule({ match = { class = "^(zoom)$" }, float = true })
 
-hl.window_rule({
-    match = { class = "com.mitchellh.ghostty" },
-    opacity = 0.85,          -- active opacity
-    })
-
 hl.layer_rule({ match = { namespace = "^(quickshell)$" }, no_anim = true })
 hl.layer_rule({ match = { namespace = "^dms:.*" }, no_anim = true })
 
