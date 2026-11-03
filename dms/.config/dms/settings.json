@@ -109,7 +109,7 @@
         }
       ],
       "spacing": 4,
-      "innerPadding": 4,
+      "innerPadding": 2,
       "bottomGap": 0,
       "transparency": 0,
       "widgetTransparency": 0.8,
@@ -125,10 +125,10 @@
       "borderColor": "surfaceText",
       "borderOpacity": 1,
       "borderThickness": 1,
-      "widgetOutlineEnabled": true,
+      "widgetOutlineEnabled": false,
       "widgetOutlineColor": "secondary",
-      "widgetOutlineOpacity": 1,
-      "widgetOutlineThickness": 2,
+      "widgetOutlineOpacity": 0.25,
+      "widgetOutlineThickness": 5,
       "fontScale": 1,
       "iconScale": 1,
       "autoHide": false,
@@ -193,7 +193,9 @@
           "enabled": false
         }
       ],
-      "widgetStyle": "pills"
+      "widgetStyle": "pills",
+      "barLengthPadding": 0,
+      "barInsetPadding": -1
     }
   ],
   "desktopWidgetInstances": [
@@ -471,5 +473,12 @@
     "media": {
       "artStyle": "square"
     }
-  }
+  },
+  "blurBorderOpacity": 0.35,
+  "hyprlandBlurVariant": "kawase",
+  "hyprlandBlurAcrylicClarity": 2,
+  "hyprlandGroupbarBlur": false,
+  "radiusMode": "scale",
+  "hyprlandLayoutRadiusOverride": -1,
+  "hyprlandLayoutBorderSize": 0
 }
