@@ -9,8 +9,8 @@
   "clockFormat": "24h",
   "barElevationEnabled": false,
   "centeringMode": "geometric",
-  "clockDateFormat": "dddd, MMMM d",
-  "lockDateFormat": "dddd, MMMM d",
+  "clockDateFormat": "dd 'de' MMMM, dddd",
+  "lockDateFormat": "dd 'de' MMMM, dddd",
   "spotlightSectionViewModes": {
     "apps": "list"
   },
@@ -491,5 +491,10 @@
   "hyprlandGroupbarBlur": false,
   "radiusMode": "scale",
   "hyprlandLayoutRadiusOverride": -1,
-  "hyprlandLayoutBorderSize": 0
+  "hyprlandLayoutBorderSize": 0,
+  "showSeconds": false,
+  "showWeekNumber": false,
+  "firstDayOfWeek": 1,
+  "windSpeedUnit": "ms",
+  "useAutoLocation": true
 }
