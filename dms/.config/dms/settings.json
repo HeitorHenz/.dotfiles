@@ -60,11 +60,22 @@
       "leftWidgets": [
         {
           "id": "appsDock",
-          "enabled": true
+          "enabled": true,
+          "barMaxVisibleApps": 0,
+          "barShowOverflowBadge": true,
+          "launcherEnabled": true,
+          "launcherLogoMode": "custom",
+          "appsDockHideIndicators": true,
+          "appsDockColorizeActive": false,
+          "appsDockEnlargeOnHover": false,
+          "runningAppsCompactMode": true,
+          "runningAppsCurrentWorkspace": true,
+          "launcherLogoCustomPath": "/home/h/Pictures/Red_star.svg.png",
+          "launcherLogoColorOverride": ""
         },
         {
           "id": "music",
-          "enabled": true
+          "enabled": false
         },
         {
           "id": "cpuUsage",
