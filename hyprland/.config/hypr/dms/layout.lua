@@ -8,7 +8,7 @@ hl.config({
 		resize_on_border = false,
 	},
 	decoration = {
-		rounding = 5,
+		rounding = 3,
 		blur = {
 			size = 7,
 			passes = 2,

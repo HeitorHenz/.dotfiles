@@ -5,7 +5,7 @@
   "registryThemeVariants": {
     "gruvboxMaterial": "hard"
   },
-  "popupTransparency": 0.8,
+  "popupTransparency": 0.5,
   "clockFormat": "24h",
   "barElevationEnabled": false,
   "centeringMode": "geometric",
@@ -59,7 +59,7 @@
       "showOnLastDisplay": true,
       "leftWidgets": [
         {
-          "id": "focusedWindow",
+          "id": "appsDock",
           "enabled": true
         },
         {
@@ -67,8 +67,13 @@
           "enabled": true
         },
         {
-          "id": "clipboard",
-          "enabled": true
+          "id": "cpuUsage",
+          "enabled": false
+        },
+        {
+          "id": "notepadButton",
+          "enabled": false,
+          "overflowMode": "section"
         }
       ],
       "centerWidgets": [
@@ -100,14 +105,14 @@
         },
         {
           "id": "powerMenuButton",
-          "enabled": true
+          "enabled": false
         }
       ],
       "spacing": 4,
       "innerPadding": 4,
       "bottomGap": 0,
       "transparency": 0,
-      "widgetTransparency": 0.75,
+      "widgetTransparency": 0.8,
       "squareCorners": false,
       "noBackground": false,
       "maximizeWidgetIcons": false,
@@ -187,7 +192,8 @@
           "id": "tray",
           "enabled": false
         }
-      ]
+      ],
+      "widgetStyle": "pills"
     }
   ],
   "desktopWidgetInstances": [
@@ -241,7 +247,7 @@
   "frameRounding": 18,
   "frameBarInsetPadding": 3,
   "configVersion": 42,
-  "radiusStrength": 16,
+  "radiusStrength": 8,
   "dockConfigs": [
     {
       "id": "dock",
@@ -428,5 +434,42 @@
   "focusRingWidth": 1.5,
   "floatingWindowSyncGlobal": true,
   "connectedFrameBarStyleBackups": {},
-  "frameEnabled": false
+  "frameEnabled": false,
+  "terminalOpacity": 100,
+  "textRenderType": 0,
+  "animationDuration": 250,
+  "springBounce": 1,
+  "enableRippleEffects": true,
+  "reduceMotion": false,
+  "dashTabs": [
+    {
+      "id": "overview",
+      "enabled": true
+    },
+    {
+      "id": "media",
+      "enabled": true
+    },
+    {
+      "id": "wallpaper",
+      "enabled": true
+    },
+    {
+      "id": "weather",
+      "enabled": true
+    },
+    {
+      "id": "wellbeing",
+      "enabled": false
+    },
+    {
+      "id": "notifications",
+      "enabled": false
+    }
+  ],
+  "dashOptions": {
+    "media": {
+      "artStyle": "square"
+    }
+  }
 }
