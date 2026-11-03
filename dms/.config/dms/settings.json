@@ -428,10 +428,10 @@
       "small": true
     }
   ],
-  "blurBorderEnabled": true,
+  "blurBorderEnabled": false,
   "blurEnabled": true,
   "blurBorderSeeded": true,
-  "blurStrength": 40,
+  "blurStrength": 36,
   "floatingWindowTitleBars": false,
   "focusRingWidth": 1.5,
   "floatingWindowSyncGlobal": true,
