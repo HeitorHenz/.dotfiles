@@ -33,10 +33,10 @@
   },
   "fontFamily": "FiraCode Nerd Font",
   "fontWeight": 700,
-  "acMonitorTimeout": 1200,
+  "acMonitorTimeout": 0,
   "acLockTimeout": 900,
-  "acSuspendTimeout": 3600,
-  "acPostLockMonitorTimeout": 1800,
+  "acSuspendTimeout": 1800,
+  "acPostLockMonitorTimeout": 300,
   "muxType": "zellij",
   "osdAlwaysShowValue": true,
   "osdMediaPlaybackEnabled": true,
@@ -272,11 +272,12 @@
       "showOnLastDisplay": true,
       "position": 1,
       "mode": "compact",
+      "middleClickAction": "close",
       "taskbarAlign": "center",
       "widgetExpansion": "popout",
       "iconSize": 40,
-      "spacing": 4,
-      "itemSpacing": 4,
+      "spacing": 8,
+      "itemSpacing": 8,
       "margin": 0,
       "bottomGap": 0,
       "transparency": 1,
@@ -478,6 +479,10 @@
     {
       "id": "notifications",
       "enabled": false
+    },
+    {
+      "id": "settings",
+      "enabled": false
     }
   ],
   "dashOptions": {
@@ -496,5 +501,10 @@
   "showWeekNumber": false,
   "firstDayOfWeek": 1,
   "windSpeedUnit": "ms",
-  "useAutoLocation": true
+  "useAutoLocation": false,
+  "density": "comfortable",
+  "acSuspendBehavior": 0,
+  "fadeToDpmsEnabled": false,
+  "lockBeforeSuspend": true,
+  "powerMenuDefaultAction": "reboot"
 }
