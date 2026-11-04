@@ -36,7 +36,7 @@
   "acMonitorTimeout": 0,
   "acLockTimeout": 900,
   "acSuspendTimeout": 1800,
-  "acPostLockMonitorTimeout": 300,
+  "acPostLockMonitorTimeout": 0,
   "muxType": "zellij",
   "osdAlwaysShowValue": true,
   "osdMediaPlaybackEnabled": true,
