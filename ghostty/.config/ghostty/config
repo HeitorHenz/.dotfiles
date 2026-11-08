@@ -15,7 +15,7 @@ cursor-style = block
 cursor-style-blink = true
 
 # Scrollback
-scrollback-limit = 200000
+scrollback-limit = 100000000
 
 # Terminal features
 mouse-hide-while-typing = true
