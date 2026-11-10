@@ -19,7 +19,7 @@ hl.bind("SUPER + SHIFT + Slash", hl.dsp.exec_cmd("dms ipc call keybinds toggle h
 
 -- === Security ===
 hl.bind("SUPER + ALT + L", hl.dsp.exec_cmd("dms ipc call lock lock"))
-hl.bind("SUPER + SHIFT + E", hl.dsp.exit())
+-- hl.bind("SUPER + SHIFT + E", hl.dsp.exit())
 hl.bind("CTRL + ALT + Delete", hl.dsp.exec_cmd("dms ipc call processlist focusOrToggle"))
 
 -- === Audio Controls ===
@@ -39,7 +39,7 @@ hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd([[dms ipc call brightness increme
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd([[dms ipc call brightness decrement 5 ""]]), { locked = true, repeating = true })
 
 -- === Window Management ===
-hl.bind("SUPER + Q", hl.dsp.window.close())
+-- hl.bind("SUPER + Q", hl.dsp.window.close())
 hl.bind("SUPER + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 hl.bind("SUPER + SHIFT + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 hl.bind("SUPER + SHIFT + T", hl.dsp.window.float({ action = "toggle" }))
@@ -99,7 +99,7 @@ hl.bind("SUPER + CTRL + U", hl.dsp.window.move({ workspace = "e+1" }))
 hl.bind("SUPER + CTRL + I", hl.dsp.window.move({ workspace = "e-1" }))
 
 -- === Workspace Management ===
-hl.bind("CTRL + SHIFT + R", hl.dsp.exec_cmd("dms ipc call workspace-rename open"))
+-- hl.bind("CTRL + SHIFT + R", hl.dsp.exec_cmd("dms ipc call workspace-rename open"))
 
 -- === Move Workspaces ===
 hl.bind("SUPER + SHIFT + Page_Down", hl.dsp.window.move({ workspace = "e+1" }))
@@ -143,7 +143,7 @@ hl.bind("SUPER + bracketleft", hl.dsp.layout("preselect l"))
 hl.bind("SUPER + bracketright", hl.dsp.layout("preselect r"))
 
 -- === Sizing & Layout ===
-hl.bind("SUPER + R", hl.dsp.layout("togglesplit"))
+-- hl.bind("SUPER + R", hl.dsp.layout("togglesplit"))
 hl.bind("SUPER + CTRL + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "set" }))
 
 -- === Move/resize windows with mainMod + LMB/RMB and dragging ===
@@ -168,4 +168,4 @@ hl.bind("ALT + Print", hl.dsp.exec_cmd("dms screenshot window"))
 hl.bind("SUPER + P", hl.dsp.exec_cmd("dms ipc outputs cycleProfile"))
 
 -- === System Controls ===
-hl.bind("SUPER + SHIFT + P", hl.dsp.dpms({ action = "toggle" }))
+-- hl.bind("SUPER + SHIFT + P", hl.dsp.dpms({ action = "toggle" }))
