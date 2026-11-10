@@ -506,5 +506,6 @@
   "acSuspendBehavior": 0,
   "fadeToDpmsEnabled": false,
   "lockBeforeSuspend": true,
-  "powerMenuDefaultAction": "reboot"
+  "powerMenuDefaultAction": "reboot",
+  "keybindsFloatingWindow": true
 }
